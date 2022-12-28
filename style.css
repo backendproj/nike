@@ -4,19 +4,29 @@
     box-sizing: border-box;
 }
 
+/* 
+Siz butun proyektni bodysiga rang beribsiz bu narsa mumkinmas
+O'rniga har bir sectioninig o'ziga rang berishingiz kerak!
 body {
     background-color: #ebffe4;
-    background-image:url("../img/main cross fon.png"  );
-    background-repeat: no-repeat; 
+    background-image:url("../img/main cross fon.png"  ); 
+    background-repeat: no-repeat;
     background-position-x:810px ;
     background-position-y: -110px;
-}
+} */
 
 .container {
+    font-family: 'Raleway', sans-serif;
     height: 100vh;
-    width: 70vw;
+    /* Mana bu yerda xato qilgan ekanman o'zim bu yerda
+    width 70vw emas 100vw bo'ladi ammo padding bilan
+    siqilishi kerak deb yana xato qilgan ekanman
+    padding bilan siqish kerak ikki tomondan
+    ammo padding ham containerga emas har bir section
+    uchun ochilgan containerga periladi!
+    */
+    width: 100vw;
     margin: 0 auto ;
-    
 }
 
 /* nav */
@@ -24,20 +34,34 @@ body {
 .nav {
     display: flex;
     align-items: center;
-    height: 20vh;
+    /* Navni heighti asosan 5 - 15 oraliq bo'ladi 
+    va foizda beriglani yaxshiroq vwdan ko'ra
+    */
+    height: 15%;
+    width: 100%;
+    /* Misol uchun mana navni tepa-pastiga 0
+    ikki yoniga esa 10% dan siqdim natija esa biz kutganni berdi
+    */
+    padding: 0 10%;
+    /* Mana bu yerga bersangiz nav backgroundli bo'ladi */
+    background-color: #ebffe4;
 }
 
 .shop_now {
     display: inline-block;
     font-size: 15px;
-    padding:10px;
+    /* padding ikki tomonga berilsa uzunroq chiroyli bo'ladi
+    har tomonga bir xili padding berib bo'lmaydi dizaynda  */
+    padding:10px 30px;
     text-decoration: none;
-    justify-content: flex-end;
     color: white;
     background-color: #5cbe3a;
-    border: 5px;
+    /* borderni olib tashlash kerak none qilib */
+    border: none;
+    /* va border radius kerak burchaklarini qayirish uchun*/
+    border-radius: 4px;
     font-size: 18px;
-    font-family: '',sans-serif;
+    /* font-family: '',sans-serif; */
 }
 .nav_items {
     display: flex;
@@ -59,13 +83,21 @@ body {
 /* main_info_left */
 
 .main {
-    
+    /* Bu main section uchun konteyner shuning uchun ham
+    buni ham biroz padding bilan siqish kerak! 
+    Tepa-pastdan ham siqish kerak shunda navbar bilan orasida
+    joy qoaldi! ikki yon obezatelno ku 😊*/
+    padding: 5% 10%;
+    /* Va backgroundni ham shunga beriladi */
+    background-color: #ebffe4;
+    /* Main butun sahifani qolgan qismini egallash uchun
+    height berdim chunki nav atiga 13%ini egallagan */
+    height: 87%;
 }
 .quote {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     color: #5cbe3a;
-
 }
 
 .mini-logo {
@@ -75,11 +107,20 @@ body {
 .main_header {
     margin-top: 10px;
     font-family: 'Raleway', sans-serif;
+    /* Font size berib shriftni kattartirdim */
+    font-size: 60px;
 }
 
 .main_info_p {
-    margin-top: 10px;
-    margin-bottom: 20px;    
+    /* margin bottom va topni bitta qilib margin ga berdim */
+    margin: 8px 0;
+    /* Fontsize qo'shdim */
+    font-size: 16px;
+    /* line-height matn pastma-past tushganda orasini
+    ochish uchun beriladi */
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
 }
 
 .price {
@@ -87,23 +128,34 @@ body {
     color: #5cbe3a;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 30px;
-    
+    /* font size qo'shdim */
+    font-size: 31px;
 }
 
 .price_old {
     font-family: 'Raleway', sans-serif;
-    color: #5cbe3a;
+    /* rangi ochroq ekan */
+    color: #5bbe3aa8;
     margin-bottom: 30px;
+    font-size: 20px;
 }
 
 .learn_more {
+    
     display: inline-block;
     margin-left: 10px;
+    /* buning background colori bo'lamaydi ya'ni prozrachniy bo'ladi
+    shuning uchun transparent berilishi kerak */
+    background-color: transparent;
+    margin-top: 40px;
     color:#5cbe3a;
-    border: 1px solid #5ceb3a;
-    padding: 10px;
-    margin-top: 130px;
+    padding: 10px 30px;
     font-size: 16px;
+    /* border 1px solid beriladi va rang ammo 1px qo'shildi 
+    paddingdan 1px olish kerak */
+    border: 1px solid #5cbe3a;
+    /* va border radius kerak burchaklarini qayirish uchun*/
+    border-radius: 4px;
 }
 
 /* /main_info_left */
@@ -142,36 +194,40 @@ body {
 .main_result {
     display: flex;
     align-items: center;
-    height: 25vh;
+    margin-top: 80px;
 }
 
 .main_result_items {
-    display:flex;
+    display: flex;
     list-style: none;
-    justify-content: flex-start; 
+    /* justify-content: flex-start;  */
     width: 90%;
-    font-family:'',sans-serif ;
-    font-size: 14px; 
+    /* font-family:'',sans-serif ; */
 }
 
 .main_result_item {
-    display: flex;
+    display: flex; 
+    /* qo'shildi */
+    flex-direction: column;
+    align-items: center;
+    /* /qo'shildi */
     margin-right: 50px;
     color: #5cbe3a;  
-    font-size: 70px;
+    font-size: 85px;
     font-family: 'Raleway', sans-serif;
 }
 
 .main_mini {
     margin-right: 20px;
+    /* Bir xil qilib widht height berdim */
+    width: 115px;
+    height: 115px;
 }
 
 .viewing {
-    color:black;
+    color:#0006;
     text-transform: uppercase;
-    height: 20vh;
-    margin-right: 90px;
-    margin-bottom: 170px;
+    font-size: 13px;
 }
 /* / main result */
 /* /main */
@@ -179,10 +235,32 @@ body {
 /*product */
 
 .product {
-    
-
+    /* productning heighti 70% ekan */
+    height: 80%;
+    /* padding esdan chiqmasin tepa-past ikki tomon uchun albatta */
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product_h {
+    font-size: 44px;
+}
 
+.product_p {
+    font-size: 16px;
+    width: 468px;
+    text-align: center;
+    font-weight: 200;
+    color: #000a;
+}
+
+.card_items {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    /* o'zingiz qiling */
 }
