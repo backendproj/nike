@@ -6,14 +6,7 @@
 
 /* 
 Siz butun proyektni bodysiga rang beribsiz bu narsa mumkinmas
-O'rniga har bir sectioninig o'ziga rang berishingiz kerak!
-body {
-    background-color: #ebffe4;
-    background-image:url("../img/main cross fon.png"  ); 
-    background-repeat: no-repeat;
-    background-position-x:810px ;
-    background-position-y: -110px;
-} */
+O'rniga har bir sectioninig o'ziga rang berishingiz kerak! */
 
 .container {
     font-family: 'Raleway', sans-serif;
@@ -25,7 +18,7 @@ body {
     ammo padding ham containerga emas har bir section
     uchun ochilgan containerga periladi!
     */
-    width: 100vw;
+    width: 98.9vw;
     margin: 0 auto ;
 }
 
@@ -45,14 +38,19 @@ body {
     padding: 0 10%;
     /* Mana bu yerga bersangiz nav backgroundli bo'ladi */
     background-color: #ebffe4;
+    background-image:url("../img/main cross fon.png"  ); 
+    background-repeat: no-repeat;
+    background-position-x:810px ;
+    background-position-y: -104px;
+    /* width: 50%; */
 }
 
 .shop_now {
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
     /* padding ikki tomonga berilsa uzunroq chiroyli bo'ladi
     har tomonga bir xili padding berib bo'lmaydi dizaynda  */
-    padding:10px 30px;
+    padding:13px 45px;
     text-decoration: none;
     color: white;
     background-color: #5cbe3a;
@@ -92,7 +90,11 @@ body {
     background-color: #ebffe4;
     /* Main butun sahifani qolgan qismini egallash uchun
     height berdim chunki nav atiga 13%ini egallagan */
-    height: 87%;
+    height: 95%;
+    background-image:url("../img/main cross fon.png"  ); 
+    background-repeat: no-repeat;
+    background-position-x:810px ;
+    background-position-y: -215px;
 }
 .quote {
     text-transform: uppercase;
@@ -115,12 +117,16 @@ body {
     /* margin bottom va topni bitta qilib margin ga berdim */
     margin: 8px 0;
     /* Fontsize qo'shdim */
-    font-size: 16px;
+    font-size: 17px;
     /* line-height matn pastma-past tushganda orasini
     ochish uchun beriladi */
     line-height: 24px;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
+    /* justify-content: baseline; */
+    align-items: center;
+    display: flex;
+
 }
 
 .price {
@@ -149,13 +155,14 @@ body {
     background-color: transparent;
     margin-top: 40px;
     color:#5cbe3a;
-    padding: 10px 30px;
+    padding: 13px 30px;
     font-size: 16px;
     /* border 1px solid beriladi va rang ammo 1px qo'shildi 
     paddingdan 1px olish kerak */
     border: 1px solid #5cbe3a;
     /* va border radius kerak burchaklarini qayirish uchun*/
     border-radius: 4px;
+    text-transform: uppercase;
 }
 
 /* /main_info_left */
@@ -263,4 +270,295 @@ body {
 
 .card {
     /* o'zingiz qiling */
+    padding: 1% ;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
 }
+
+.card_price {
+    font-size: 38px;
+}
+
+/* view */
+.view {
+    height: 80%;
+    position: relative;
+    margin-top: 320px;
+}
+
+.view1 {
+    position: absolute;
+    z-index: -1;
+    left: 68px;
+}
+
+.view2 {
+    position: absolute;
+    left: 227.33px;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.view_header {
+    position: absolute;
+    z-index: 1;
+    left: 325.33px;
+    top: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+}
+
+.view_info_p {
+    position: absolute;
+    z-index: 1;
+    left: 325.33px;
+    top: 230px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.view3 {
+    position: absolute;
+    width: 607.97px;
+    height: 433.34px;
+    left: 765.36px;
+    top: 53px;
+    z-index: 1;
+}
+
+/* /view */
+
+/* shoes */
+.shoes {
+    position: relative;
+    display:flex;
+    padding: 5% 5%;
+    margin-top: 50px;
+}
+
+.left_img {
+    position: absolute;
+    z-index: -1;
+}
+
+.left_img_down {
+    position:relative;
+    padding: 3% 3%;   
+}
+
+.right_shoes {
+    margin-top: 150px;
+    margin-left: 60px;
+    margin-right: 30px;
+    position: relative;
+}
+.shoes_header {
+    /* padding: 3% 3%; */
+    font-family: 'Raleway', sans-serif;
+    /* Font size berib shriftni kattartirdim */
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.shoes_logo_mini {
+    /* left: 56.56%; */
+    right: 41.36%;
+    top: 100px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_big {
+    position: absolute;
+    bottom: 70px;
+    /* padding: 5% 10%; */
+    z-index: -1;
+    width: 650px;
+}
+
+/* /shoes */
+
+/* review */
+
+.review {
+    position: relative;
+}
+
+.review1 {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.review2 {
+    position: absolute;
+    z-index: 1;
+    left: 470px;
+    top: 90px;
+}
+
+.review_header {
+    position: absolute;
+    z-index: 1;
+    left: 620px;
+    margin-top: 200px;
+    font-size: 31px;
+}
+
+.review_logo {
+    position: absolute;
+    z-index: 1;
+    left: 620px;
+    margin-top: 280px;
+}
+
+.review_name {
+    position: absolute;
+    z-index: 1;
+    left: 740px;
+    margin-top: 280px;
+    font-size:22px ;
+}
+
+.review_info_p {
+    position: absolute;
+    z-index: 1;
+    left: 740px;
+    margin-top: 330px;
+    font-size:17px ;
+}
+
+.star {
+    position: absolute;
+    z-index: 1;
+    left: 740px;
+    margin-top: 430px;
+}
+
+.review_like {
+    position: absolute;
+    z-index: 1;
+    left: 900px;
+    margin-top: 430px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.review_line {
+    position: absolute;
+    z-index: 1;
+    left: 600px;
+    margin-top: 500px;
+}
+
+.review3 {
+    position: absolute;
+    left: 910px;
+    top: 50px;
+    z-index: 0;
+}
+
+.review4 {
+    position: absolute;
+    left: 1200px;
+    top: 50px;
+    z-index:-1 ;
+}
+
+/* /review */
+
+/* get */
+
+.get {
+    position: relative;
+}
+
+.get_png {
+    position: absolute;
+    width: 1146px;
+    height: 367.33px;
+    left: 210px;
+    top: 700px;
+}
+
+.get_header {
+    position: absolute;
+    left: 620px;
+    font-size: 45px;
+    margin-top: 800px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.get_info_p {
+    position: absolute;
+    display: flex;
+    left: 600px;
+    font-size: 17px;
+    margin-top: 870px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.subescribe {
+    position: absolute;
+    display: flex;
+    left: 720px;
+    font-size: 17px;
+    margin-top: 940px;
+    text-align: center;
+    background-color:#5cbe3a ;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 30px;
+}
+/* /get */
+
+/* footer */
+
+.footer_line {
+    margin-top: 1200px;
+    width: 1510px;
+}
+
+
+.nav_foot {
+    display: flex;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    padding: 1% 10%;
+}
+
+.nav_items {
+    display: flex;
+    list-style: none;
+    justify-content: center; 
+    width: 90%;
+    font-family:'',sans-serif ;
+    font-size: 14px; 
+}
+
+.nav_item {
+    display: flex;
+    margin-right: 20px;  
+}
+
+.follow {
+    display: flex;
+    font-size: 16px;
+    padding:13px 45px;
+    text-decoration: none;
+    color: black;
+}
+
+.green_line {
+    width: 100%;
+}
+/* /footer */
+/* /container */
